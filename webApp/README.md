@@ -2,5 +2,11 @@
 in this dir we find the code for the web app
 
 ## instructions
-
-`npm install`
+make sure that NodeJS is installed on your machine then run
+```
+node weeb.js
+```
+or
+```
+node gbt.js 
+```
