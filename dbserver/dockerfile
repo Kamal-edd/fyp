@@ -1,0 +1,12 @@
+FROM postgres:latest
+
+# Set environment variables
+ENV POSTGRES_USER fyp
+ENV POSTGRES_PASSWORD fyppassword
+ENV POSTGRES_DB fypdb
+
+# Copy the script to the container
+COPY init.sql /docker-entrypoint-initdb.d/
+
+# Change the permissions of the script
+RUN chmod a+r /docker-entrypoint-initdb.d/init.sql
