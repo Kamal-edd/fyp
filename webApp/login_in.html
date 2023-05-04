@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> F.P.Y </title>
+    <style>
+    *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://i.pinimg.com/originals/60/9b/74/609b747ace0afb2491d86d56c3b42e3c.png);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #0000001f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px #000,
+				  1px 2px 6px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px white,
+				  1px 2px 6px white,
+				  1px -1px 0 white,
+				  -1px -1px 0 white;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#signin
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}           
+    </style>
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='signin()'class='toggle-btn'>sign In</button>
+                 </div>
+                  <form id='login' class='input-group-login'>
+                        <input type='text'class='input-field'placeholder='Email' required >
+		                <input type='password'class='input-field'placeholder='Enter Password' required>
+		                <input type='checkbox'class='check-box'><span>Remember Password</span>
+		                <button type='submit'class='submit-btn'>Log in</button>
+                  </form>
+                        <form id='signin' class='input-group-register'>
+                        <input style="color: beige;" type='text'class='input-field'placeholder='First Name' required>
+                        <input style="color: beige;" type='text'class='input-field'placeholder='Last Name ' required>
+                        <input style="color: beige;" type='email'class='input-field'placeholder='Email' required>
+                        <input style="color: beige;" type='password'class='input-field'placeholder='Enter Password' required>
+                        <input style="color: beige;" type='password'class='input-field'placeholder='Confirm Password'required>
+                        <input style="color: beige;" type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                        <button type='submit'class='submit-btn'>sign in</button>
+	             </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('signin');
+		var z=document.getElementById('btn');
+		function signin()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
