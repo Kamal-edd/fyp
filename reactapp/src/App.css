@@ -1,0 +1,14 @@
+.body {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("file:///C:/Users/hp/Downloads/WhatsApp_Image_2023-05-13_at_17_21_42_auto_x2-transformed.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+

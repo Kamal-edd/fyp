@@ -1,0 +1,61 @@
+{
+"workbench.iconTheme": "material-icon-theme",
+"tabnine.experimentalAutoImports": true,
+"workbench.color Theme": "Dracula",
+"http.proxyAuthorization": null,
+
+
+"emmet.include Languages":{
+  "javascript": "javascriptreact"
+
+},
+
+"emmet.trigger ExpansionOnTab": true,
+"editor.minimap.enabled": false,
+"json.schemas":[
+  {
+    "fileMatch": [
+      "*.json"
+      ],
+      "url": "https://raw.githubusercontent.com/microsoft/vscode-json-schemas/master/dist/vscode-json-schema.json"
+      }
+      ],
+      "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+          },
+          "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+            },
+            "[typescriptreact]": {
+              "editor.defaultFormatter": "esbenp.prettier-vscode"
+              },
+              "[html]": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+                "[htmlreact]": {
+                  "editor.defaultFormatter": "esbenp.prettier-vscode"
+                  },
+                  "[css]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                    },
+                    "[cssreact]": {
+                      "editor.defaultFormatter": "esbenp.prettier-vscode"
+                      },
+                      "[scss]": {
+                        "editor.defaultFormatter": "esbenp.prettier-vscode"
+                        },
+                        "[scssreact]": {
+                          "editor.defaultFormatter": "esbenp.prettier-vscode"
+                          },
+                          "[less]": {
+                            "editor.defaultFormatter": "esbenp.prettier-vscode"
+                            },
+                            "[lessreact]": {
+                              "editor.defaultFormatter": "esbenp.prettier-vscode"
+                              },
+"window.zoomLevel": 2
+
+}
